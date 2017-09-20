@@ -13,6 +13,41 @@ env:
     - badd=nsd
     - ab=we
     - na1=jj2
+    - bss12=mm12
+    - baas2=mm12
+    - badd2=nsd2
+    - ab2=we2
+    - na12=jj22
+    - bss23=mm23
+    - baas23=mm123
+    - badd23=nsd23
+    - ab23=we23
+    - na123=jj223
+    - bss1223=mm1223
+    - baas223=mm1223
+    - badd223=nsd223
+    - ab223=we223
+    - na1223=jj2223
+    - bss65=mm65
+    - baas65=mm165
+    - badd65=nsd65
+    - ab65=we65
+    - na165=jj265
+    - bss1265=mm1265
+    - baas265=mm1265
+    - badd265=nsd265
+    - ab265=we265
+    - na1265=jj2265
+    - bss2365=mm2365
+    - baas2365=mm12365
+    - badd2365=nsd2365
+    - ab2365=we2365
+    - na12365=jj22365
+    - bss122365=mm122365
+    - baas22365=mm122365
+    - badd22365=nsd22365
+    - ab22365=we22365
+    - na122365=jj222365
 
 build:
   cache: true

@@ -7,6 +7,11 @@ build:
   ci:
     - ls -al
     - jfrog rt u package.json test-repository-local
+ 
+  pre_ci_boot:
+    image_name: drydock/u16pytall
+    image_tag: v5.8.2
+    pull: true 
 
   post_ci:
     - echo "true"

@@ -3,6 +3,7 @@ language: none
 build:
   pre_ci:
     - echo "true4"
+    - jfrog rt u shippable.yml test-repository-local
 
   ci:
     - ls -al
@@ -15,6 +16,7 @@ build:
 
   post_ci:
     - echo "true"
+    - jfrog rt u index.js test-repository-local
     
 
 deploy:

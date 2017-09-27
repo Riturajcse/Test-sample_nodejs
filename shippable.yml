@@ -23,5 +23,5 @@ deploy:
 
 integrations:
   hub:
-    - integrationName: jfrog
+    - integrationName: jfrognew
       type: artifactory

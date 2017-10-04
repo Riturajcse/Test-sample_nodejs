@@ -24,6 +24,6 @@ deploy:
     - ls
 
 integrations:
-  hub:
+  generic:
     - integrationName: jfrognew123
       type: artifactoryKey

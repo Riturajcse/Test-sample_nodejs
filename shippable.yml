@@ -26,4 +26,4 @@ deploy:
 integrations:
   hub:
     - integrationName: jfrognewKey
-      type: artifactory
+      type: artifactoryKey

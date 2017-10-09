@@ -2,12 +2,16 @@ language: none
 
 build:
   pre_ci:
-    - echo "true4"
+    - echo "This is pre_ci"
     - jfrog rt u shippable.yml test-repository-local
+    - cp shippable.yml newShippableYML.$BUILD_NUMBER.pre_ci.yml
+    - jfrog rt u newShippableYML.$BUILD_NUMBER.pre_ci.yml test-repository-local
 
   ci:
-    - ls -al
-    - jfrog rt u package.json test-repository-local
+    - echo "This is ci"
+    - jfrog rt u shippable.yml test-repository-local
+    - cp shippable.yml newShippableYML.$BUILD_NUMBER.ci.yml
+    - jfrog rt u newShippableYML.$BUILD_NUMBER.ci.yml test-repository-local
  
   pre_ci_boot:
     image_name: drydock/u16pytall
@@ -15,8 +19,10 @@ build:
     pull: true 
 
   post_ci:
-    - echo "true"
-    - jfrog rt u index.js test-repository-local
+    - echo "This is post_ci"
+    - jfrog rt u shippable.yml test-repository-local
+    - cp shippable.yml newShippableYML.$BUILD_NUMBER.post_ci.yml
+    - jfrog rt u newShippableYML.$BUILD_NUMBER.post_ci.yml test-repository-local
     
 
 deploy:

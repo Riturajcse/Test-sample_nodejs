@@ -32,4 +32,4 @@ deploy:
 integrations:
   hub:
     - integrationName: jfrogOld
-      type: artifactoryKey
+      type: artifactory

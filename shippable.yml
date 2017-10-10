@@ -2,13 +2,13 @@ language: none
 
 build:
   pre_ci:
-    - echo "This is pre_ci"
+    - echo "This is pre_ci OLD"
     - jfrog rt u shippable.yml test-repository-local
     - cp shippable.yml newShippableYML.$BUILD_NUMBER.pre_ci.yml
     - jfrog rt u newShippableYML.$BUILD_NUMBER.pre_ci.yml test-repository-local
 
   ci:
-    - echo "This is ci"
+    - echo "This is ci OLD"
     - jfrog rt u shippable.yml test-repository-local
     - cp shippable.yml newShippableYML.$BUILD_NUMBER.ci.yml
     - jfrog rt u newShippableYML.$BUILD_NUMBER.ci.yml test-repository-local
@@ -19,7 +19,7 @@ build:
     pull: true 
 
   post_ci:
-    - echo "This is post_ci"
+    - echo "This is post_ci OLD"
     - jfrog rt u shippable.yml test-repository-local
     - cp shippable.yml newShippableYML.$BUILD_NUMBER.post_ci.yml
     - jfrog rt u newShippableYML.$BUILD_NUMBER.post_ci.yml test-repository-local

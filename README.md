@@ -27,3 +27,23 @@ d
 asdads
 1234
 asd
+
+
+## Steps to bring up new machines on rc
+
+### Step 1: 
+- Update Shippable/infra to have new machine (Similiar to this PR https://github.com/Shippable/infra/pull/317/files)
+
+### Step 2:
+- Run rc_saas_infra_prov job after your PR is merged. Note down the new machines ip addresses which will show in job consoles at the end of the job.
+
+### Step 3:
+- SSH into rc jump box and edit .ssh/config file to have new ip of the machines.
+
+### Step 4:
+- Open rc admiral UI from your local and in Swarm section remove old workers and add new ones.
+- Copy the command from the box below to authorize ssh access and run this on all the new machine that you initilized by doing SSH into them from rc jumpbox.
+- Select the check box when you are done and then Initilize.
+
+When this ends rc should be up and running on new machines.
+

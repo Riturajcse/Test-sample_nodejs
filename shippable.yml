@@ -20,8 +20,8 @@ build:
     #- docker pull riturajcse/rituexm
     #- printenv
     
-integrations:
-  hub:
-    - integrationName: dockerhub
-      type: generic
+#integrations:
+  #hub:
+    #- integrationName: dockerhub
+      #type: generic
       

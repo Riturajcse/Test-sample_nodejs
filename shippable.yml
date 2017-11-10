@@ -15,9 +15,10 @@ build:
   pre_ci:
     - echo "this is pr-ci"
   ci:
-    - echo "this is ci pulling private image from docker"
-    - docker pull riturajcse/rituexm
-    - printenv
+    - echo "going to sleep for 1 minute"
+    - sleep 1m
+    #- docker pull riturajcse/rituexm
+    #- printenv
     
 integrations:
   hub:

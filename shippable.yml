@@ -13,7 +13,7 @@ env:
 build:
   cache: true
   pre_ci:
-    - echo "this is pr-ci"
+    - echo "this is pr-ci1"
   ci:
     - echo "going to sleep for 1 minute"
     #- sleep 1m

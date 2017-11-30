@@ -16,7 +16,7 @@ build:
     - echo "this is pr-ci"
   ci:
     - echo "going to sleep for 1 minute"
-    - sleep 1m
+    #- sleep 1m
     #- docker pull riturajcse/rituexm
     #- printenv
     

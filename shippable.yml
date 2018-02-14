@@ -11,7 +11,7 @@ env:
     - foo1=bar1adjadjkahdkjahdkjahdkjahdjkahdkjahdskjhdkjahdsjakhdskjahdkjahdkjsahdjkahsdjkahskjdhakjdshakjhdakjhdkjahdkjahdkjahdkjahdkjahdkjadhkjahdkjadhakjhdkjahdkjadhkjad
 
 build:
-  cache: true
+  #cache: true
   pre_ci:
     - echo "this is pr-ci1"
   ci:

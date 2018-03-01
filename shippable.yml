@@ -14,7 +14,7 @@ build:
   pre_ci:
     - echo "this is pr-ci1"
   ci:
-    - echo "printing env"
+    - echo "printing env 123"
     - printenv
     - echo "build-number $BUILD_NUMBER"
     - echo "job-number $JOB_NUMBER"

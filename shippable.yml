@@ -19,9 +19,9 @@ build:
     - echo "build-number $BUILD_NUMBER"
     - echo "job-number $JOB_NUMBER"
     - if [ "$JOB_NUMBER" == "2" ]; then echo "hello $JOB_NUMBER"; fi
-    - if [ "$JOB_NUMBER" == "2" ]; then echo "versionName=$BRANCH.$JOB_NUMBER" >> $JOB_STATE/box-nginx-2.env; fi
+    - if [ "$JOB_NUMBER" == "2" ]; then echo "versionName=$BRANCH.$BUILD_NUMBER.$JOB_NUMBER" >> $JOB_STATE/box-nginx-2.env; fi
     - if [ "$JOB_NUMBER" == "1" ]; then echo "versionName=$BRANCH.$JOB_NUMBER"; fi
-    - if [ "$JOB_NUMBER" == "1" ]; then echo "versionName=$BRANCH.$JOB_NUMBER" >> $JOB_STATE/box-nginx-1.env; fi
+    - if [ "$JOB_NUMBER" == "1" ]; then echo "versionName=$BRANCH.$BUILD_NUMBER.$JOB_NUMBER" >> $JOB_STATE/box-nginx-1.env; fi
     #- echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/box-nginx-1.env;
     #- shipctl post_resource_state box-nginx-1 versionName "build_"$BUILD_NUMBER
     

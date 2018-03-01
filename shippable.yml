@@ -15,7 +15,8 @@ build:
     - echo "this is pr-ci1"
   ci:
     - echo "going to sleep for 1 minute"
-    - shipctl post_resource_state hiptest-img versionName "build_"$BUILD_NUMBER
+    - echo "build-number $BUILD_NUMBER"
+    - shipctl post_resource_state box-nginx-1 versionName "build_"$BUILD_NUMBER
     
 #integrations:
   #hub:

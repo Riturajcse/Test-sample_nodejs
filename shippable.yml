@@ -17,7 +17,7 @@ build:
     - echo "printing env"
     - printenv
     - echo "build-number $BUILD_NUMBER"
-    - if [ "$BUILD_NUMBER" == "1" ]; then echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/box-nginx-1.env; fi
+    - if [ "$BUILD_NUMBER" == "3" ]; then echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/box-nginx-1.env; fi
     #- echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/box-nginx-1.env;
     #- shipctl post_resource_state box-nginx-1 versionName "build_"$BUILD_NUMBER
     

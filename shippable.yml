@@ -6,9 +6,8 @@ language: node_js
 
 env:
   global:
-    - - secure: CP3ifPcmrU45eJrTAT5WFwpemjY7efEiIty4lQhB52EGvVqDjjDGe4KajaB8yFzJk3lWblSpL0J2XF1ymqNB3WspugZdu7309zpG9xKj4og2m93WoA7Ci/boVNPFjIAQY6EJT7HcpTL7bq3+tCPK+ZNCy099LVg11+RLaooA0CGeh22yYyLQS+Q12uOOuRk98LrxL2FuwmtJLltOUi+6inWZKx3zJVyByvonUy3rVbMbpCmphFQLWRMMXS9lH94KMzOSrgJ2G5UM2cadd1NMomK8metuGLH3UtlJdGAchRTqDGeSqGIRvASluZTnaEJN8SY7b/+xnJ+uUEc0+uVtrw==
-    - foo=barthisiakjdsdbksksfkjsnfkjsfkjanfkjakjadkjabdakjdabdkabdkabdkjabdkjabdkjabdkjabdkjadkad
-    - foo1=bar1adjadjkahdkjahdkjahdkjahdjkahdkjahdskjhdkjahdsjakhdskjahdkjahdkjsahdjkahsdjkahskjdhakjdshakjhdakjhdkjahdkjahdkjahdkjahdkjahdkjadhkjahdkjadhakjhdkjahdkjadhkjad
+    - foo=bar
+    - foo1=bar1
 
 build:
   #cache: true
@@ -16,9 +15,7 @@ build:
     - echo "this is pr-ci1"
   ci:
     - echo "going to sleep for 1 minute"
-    #- sleep 1m
-    #- docker pull riturajcse/rituexm
-    #- printenv
+    - shipctl post_resource_state hiptest-img versionName "build_"$BUILD_NUMBER
     
 #integrations:
   #hub:

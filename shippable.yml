@@ -4,10 +4,6 @@ language: node_js
   #- 4.3.1
   #- 5.0.0
 
-env:
-  matrix:
-    - foo=bar
-    - foo1=bar1
 
 build:
   #cache: true

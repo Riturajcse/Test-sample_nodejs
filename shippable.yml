@@ -9,6 +9,7 @@ build:
   #cache: true
   pre_ci:
     - echo "this is pr-ci1"
+    - docker pull library/redis
   ci:
     - echo "printing env 12345478798"
     - printenv

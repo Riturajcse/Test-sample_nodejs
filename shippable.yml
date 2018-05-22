@@ -11,11 +11,14 @@ build:
     - echo "this is pr-ci1"
     - docker pull library/redis
   ci:
-    - echo "printing env 12345478798"
-    - printenv
-    - echo "build-number $BUILD_NUMBER"
-    - echo "job-number $JOB_NUMBER"
+    - shipctl bump_version v1.1.1 major
+    - shipctl bump_version v1.1.1 minor
+    - shipctl bump_version v1.1.1 patch
+    - shipctl bump_version v1.1.1-rc.2.beta.2 beta
+    - shipctl bump_version v1.1.1-beta.2.rc.2 beta
+    - shipctl bump_version 1.1.1-beta.2.rc.2.alpha beta
     - shipctl bump_version v1.1.1 rc 
+    - shipctl bump_version 1.1.1-beta.2.rc.2.alpha final
     
 #integrations:
   #hub:

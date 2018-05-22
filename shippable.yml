@@ -1,10 +1,6 @@
 language: node_js
 
 build:
-  #cache: true
-  pre_ci:
-    - echo "this is pr-ci1"
-    - docker pull library/redis
   ci:
     - shipctl bump_version v1.1.1 major
     - shipctl bump_version v1.1.1 minor
@@ -14,9 +10,5 @@ build:
     - shipctl bump_version 1.1.1-beta.2.rc.2.alpha beta
     - shipctl bump_version v1.1.1 rc 
     - shipctl bump_version 1.1.1-beta.2.rc.2.alpha final
-    
-#integrations:
-  #hub:
-    #- integrationName: dockerhub
-      #type: generic
+   
       

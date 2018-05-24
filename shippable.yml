@@ -2,13 +2,11 @@ language: node_js
 
 build:
   ci:
-    - shipctl bump_version v1.1.1 major
-    - shipctl bump_version v1.1.1 minor
-    - shipctl bump_version v1.1.1 patch
-    - shipctl bump_version v1.1.1-rc.2.beta.2 beta
-    - shipctl bump_version v1.1.1-beta.2.rc.2 beta
-    - shipctl bump_version 1.1.1-beta.2.rc.2.alpha beta
-    - shipctl bump_version v1.1.1 rc 
-    - shipctl bump_version 1.1.1-beta.2.rc.2.alpha final
+    - echo "starting TEST'
+    - touch hello.txt
+    - echo "hello" >> hello.txt
+    - echo "world" >> hello.txt
+    - echo "So here is the file that we created"; cat hello.txt
+    - echo "thanks"
    
       

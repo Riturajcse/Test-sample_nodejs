@@ -4,6 +4,7 @@ build:
   ci:
     - |
       echo "starting TEST"
+      sleep 10
       touch hello.txt
       echo "hello" >> hello.txt
       echo "world" >> hello.txt

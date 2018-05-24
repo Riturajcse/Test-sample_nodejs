@@ -2,11 +2,12 @@ language: node_js
 
 build:
   ci:
-    - echo "starting TEST"
-    - touch hello.txt
-    - echo "hello" >> hello.txt
-    - echo "world" >> hello.txt
-    - echo "So here is the file that we created"; cat hello.txt
-    - echo "thanks"
+    - |
+      echo "starting TEST"
+      touch hello.txt
+      echo "hello" >> hello.txt
+      echo "world" >> hello.txt
+      echo "So here is the file that we created"; cat hello.txt
+      echo "thanks"
    
       

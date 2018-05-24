@@ -2,7 +2,7 @@ language: node_js
 
 build:
   ci:
-    - echo "starting TEST'
+    - echo "starting TEST"
     - touch hello.txt
     - echo "hello" >> hello.txt
     - echo "world" >> hello.txt

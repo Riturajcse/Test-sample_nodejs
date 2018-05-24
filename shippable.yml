@@ -8,7 +8,7 @@ build:
       echo "hello" >> hello.txt
       echo "world" >> hello.txt
       echo "So here is the file that we created"; cat hello.txt
-      echo "thanks"
+      echo "thanks \n okay"
     - echo "other script"
     - echo "some other script 1"
    

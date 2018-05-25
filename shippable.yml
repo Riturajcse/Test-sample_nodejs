@@ -2,7 +2,8 @@ language: node_js
 
 build:
   ci:
-    - echo "starting TEST"
+    - |
+       echo "starting TEST"
     - echo "other script"
     - echo "some other script 1"
    

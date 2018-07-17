@@ -13,7 +13,7 @@ build:
    
       
 integrations:
-  hub:
+  generic:
     - integrationName: aws-iam
       region: us-east-1 
       type: ecr

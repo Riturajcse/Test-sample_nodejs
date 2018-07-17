@@ -12,3 +12,8 @@ build:
     - shipctl bump_version 1.1.1-beta.2.rc.2.alpha final
    
       
+integrations:
+  hub:
+    - integrationName: aws-iam
+      region: us-east-1 
+      type: ecr

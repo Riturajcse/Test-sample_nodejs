@@ -2,18 +2,11 @@ language: node_js
 
 build:
   ci:
-    - shipctl bump_version v1.1.1 major
-    - shipctl bump_version v1.1.1 minor
-    - shipctl bump_version v1.1.1 patch
-    - shipctl bump_version v1.1.1-rc.2.beta.2 beta
-    - shipctl bump_version v1.1.1-beta.2.rc.2 beta
-    - shipctl bump_version 1.1.1-beta.2.rc.2.alpha beta
-    - shipctl bump_version v1.1.1 rc 
-    - shipctl bump_version 1.1.1-beta.2.rc.2.alpha major
+    - echo "hello"
    
       
 integrations:
   deploy:
-    - integrationName: aws-iam
+    - integrationName: awsKeys
       region: us-east-1 
       type: amazonKeys

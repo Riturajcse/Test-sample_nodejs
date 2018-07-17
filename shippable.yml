@@ -13,7 +13,7 @@ build:
    
       
 integrations:
-  generic:
+  deploy:
     - integrationName: aws-iam
       region: us-east-1 
-      type: aws_iam
+      type: amazonKeys

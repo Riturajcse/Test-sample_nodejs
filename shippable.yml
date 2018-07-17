@@ -7,6 +7,5 @@ build:
       
 integrations:
   deploy:
-    - integrationName: awsKeys
-      region: us-east-1 
-      type: amazonKeys
+    - integrationName: aws-iam
+      type: aws_iam

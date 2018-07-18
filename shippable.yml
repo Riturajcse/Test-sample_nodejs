@@ -15,6 +15,6 @@ resources:
 
 jobs:
   - name: my-runci-job
-     type: runCI
-     steps:
-         - IN: my-integration
+    type: runCI
+    steps:
+      - IN: my-integration

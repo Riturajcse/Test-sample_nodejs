@@ -17,7 +17,7 @@ resources:
     integration: aws-integration
 
 jobs:
-  - name: my-runci-job
+  - name: sample_nodejs_runCI
     type: runCI
     steps:
       - IN: my-integration

@@ -8,6 +8,7 @@ build:
     - printenv
     - echo "here"
     - docker run
+    - sleep 10000
 
 integrations:
   deploy:

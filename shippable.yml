@@ -7,10 +7,14 @@ build:
     - echo "CI section"
     - printenv
     - echo "here"
-    - docker run
-    - sleep 10000
 
-integrations:
-  deploy:
-    - integrationName: amazon-keys
-      type: amazonKeys
+resources:
+  - name: my-integration
+    type: integration
+    integration: aws-integration
+
+jobs:
+  - name: my-runci-job
+     type: runCI
+     steps:
+         - IN: my-integration

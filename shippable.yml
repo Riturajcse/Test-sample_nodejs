@@ -7,10 +7,8 @@ build:
     - echo "CI section"
     - printenv
     - echo "here"
-    - echo $my-integration_INTEGRATION_ACCESSKEY
-    - echo my-integration_INTEGRATION_ACCESSKEY
-    - echo MY-INTEGRATION_INTEGRATION_ACCESSKEY
-    - echo $MY-INTEGRATION_INTEGRATION_ACCESSKEY
+    - echo $MY_INTEGRATION_INTEGRATION_ACCESSKEY
+    - echo $MY_INTEGRATION_INTEGRATION_ACCESSKEY
     - echo "hh"
 
 resources:

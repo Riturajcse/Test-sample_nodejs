@@ -5,6 +5,8 @@ node_js:
 build:
   ci:
     - echo "CI section"
+    - printenv
+    - echo "here"
 
 integrations:
   deploy:

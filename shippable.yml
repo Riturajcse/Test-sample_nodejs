@@ -7,6 +7,7 @@ build:
     - echo "CI section"
     - printenv
     - echo "here"
+    - docker run
 
 integrations:
   deploy:

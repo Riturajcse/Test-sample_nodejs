@@ -8,5 +8,5 @@ build:
 
 integrations:
   deploy:
-    - integrationName: amazon-key
-      type: amazonKeys
+    - integrationName: aws-iam
+      type: aws_iam

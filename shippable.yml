@@ -11,3 +11,7 @@ integrations:
       type: slackKey
       recipients:
         - "#mybuilds" 
+      on_success: always
+      #on_failure: always | change | never
+      #on_cancel: always
+      #on_start: always

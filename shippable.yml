@@ -6,7 +6,7 @@ build:
    
       
 integrations:
-  deploy:
+  notifications:
     - integrationName: slack
       type: slack
       recipients:

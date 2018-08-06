@@ -8,6 +8,6 @@ build:
 integrations:
   notifications:
     - integrationName: slack
-      type: slack
+      type: slackKey
       recipients:
         - "#mybuilds" 

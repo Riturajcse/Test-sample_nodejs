@@ -2,7 +2,7 @@ language: node_js
 
 build:
   ci:
-    - echo "hello"
+    - echo "hello 1"
    
       
 integrations:

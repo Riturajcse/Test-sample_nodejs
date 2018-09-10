@@ -12,10 +12,10 @@ language: node_js
 build:
   pre_ci:
     - echo "hello world pre_ci"
-    #- *template-script-1
+    - *template-script-1
   ci:
     - echo "hello world"
-    #- *template-script-2
+    - *template-script-2
   post_ci:
     - echo "hello world post_ci new"
-    #- *template-script-1
+    - *template-script-1

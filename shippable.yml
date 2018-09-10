@@ -1,14 +1,16 @@
-language: node_js
+templates: &template-script 
+  - echo "common-script line 1"
+  - echo "common-script line 1"
+  - echo "common-script line 1"
 
+language: node_js
 build:
+  pre_ci:
+    - echo "hello world pre_ci"
+    - *template-script
   ci:
-    - shipctl bump_version v1.1.1 major
-    - shipctl bump_version v1.1.1 minor
-    - shipctl bump_version v1.1.1 patch
-    - shipctl bump_version v1.1.1-rc.2.beta.2 beta
-    - shipctl bump_version v1.1.1-beta.2.rc.2 beta
-    - shipctl bump_version 1.1.1-beta.2.rc.2.alpha beta
-    - shipctl bump_version v1.1.1 rc 
-    - shipctl bump_version 1.1.1-beta.2.rc.2.alpha final
-   
-      
+    - echo "hello world"
+    - *template-script
+  post_ci:
+    - echo "hello world post_ci new"
+    - *template-script

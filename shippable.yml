@@ -2,8 +2,8 @@ templates: &template-script
   - echo "common-script line 1"
   - echo "common-script line 2"
   - echo "common-script line 3"
-  - |
-    echo "multiline common-script line 1"
+  - >
+    echo "multiline common-script line 1";
     echo "multiline common-script line 2"
 
 language: node_js
@@ -16,4 +16,7 @@ build:
     - *template-script
   post_ci:
     - echo "hello world post_ci new"
+    - *template-script
+  on_success:
+    - echo "hello world on-success"
     - *template-script

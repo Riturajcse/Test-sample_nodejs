@@ -1,21 +1,21 @@
-templates: &template-script 
-  - echo "common-script line 1"
-  - echo "common-script line 2"
-  - echo "common-script line 3"
-  - echo "hello" \
-    "world"
+#templates: &template-script 
+  #- echo "common-script line 1"
+  #- echo "common-script line 2"
+  #- echo "common-script line 3"
+  #- echo "hello" \
+    #"world"
 
 language: node_js
 build:
   pre_ci:
     - echo "hello world pre_ci"
-    - *template-script
+    - *templatesX
   ci:
     - echo "hello world"
-    - *template-script
+    - *templatesX
   post_ci:
     - echo "hello world post_ci new"
-    - *template-script
+    - *templatesX
   on_success:
     - echo "hello world on-success"
-    - *template-script
+    - *templatesX

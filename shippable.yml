@@ -12,10 +12,10 @@ build:
     - *templatesX
   ci:
     - echo "hello world"
-    - *templatesX
+    - *template-script-X
   post_ci:
     - echo "hello world post_ci new"
-    - *templatesX
+    - *template-script-X
   on_success:
     - echo "hello world on-success"
-    - *templatesX
+    - *template-script-X

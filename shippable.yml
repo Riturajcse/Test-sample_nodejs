@@ -9,7 +9,7 @@ language: node_js
 build:
   pre_ci:
     - echo "hello world pre_ci"
-    - *templatesX
+    - *template-script-X
   ci:
     - echo "hello world"
     - *template-script-X

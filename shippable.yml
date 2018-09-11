@@ -8,14 +8,14 @@
 language: node_js
 build:
   pre_ci:
-    - echo "hello world pre_ci"
+    - echo "hello world pre_ci new now"
     - *template-script-X
   ci:
     - echo "hello world123"
     - *template-script-X
   post_ci:
-    - echo "hello world post_ci new"
+    - echo "hello world post_ci new now"
     - *template-script-X
   on_success:
-    - echo "hello world on-success"
+    - echo "hello world on-success new now"
     - *template-script-X

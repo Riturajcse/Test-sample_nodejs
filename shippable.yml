@@ -10,15 +10,15 @@ build:
   pre_ci:
     - echo "hello world pre_ci new now test1234567x"
     #- *template-script-2 
-    - *template-script-X
+    #- *template-script-X
   ci:
     - echo "hello world123"
     #- *template-script-2
-    - *template-script-X
+    #- *template-script-X
   post_ci:
     - echo "hello world post_ci new now test"
     #- *template-script-2
-    - *template-script-X
+    #- *template-script-X
   on_success:
     - echo "hello world on-success new now"
-    - *template-script-X
+    #- *template-script-X

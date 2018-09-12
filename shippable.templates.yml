@@ -1,2 +1,2 @@
 templatesX: &template-script-X
-  - echo "common-script line XY12"
+  - echo "common-script line XY123"

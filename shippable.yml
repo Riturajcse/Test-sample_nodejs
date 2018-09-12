@@ -8,7 +8,7 @@
 language: node_js
 build:
   pre_ci:
-    - echo "hello world pre_ci new now test1234567xy"
+    - echo "hello world pre_ci new now test1234567xyw"
     - *template-script-2 
     - *template-script-X
   ci:

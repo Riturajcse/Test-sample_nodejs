@@ -4,4 +4,4 @@ externalReferences:
   - https://github.com/ritutajTest/sample_php/raw/master/temp2.yml
  
 templatesX: &template-script-X
-  - echo "common-script line XY"
+  - echo "common-script line XYZr"

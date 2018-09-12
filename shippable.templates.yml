@@ -1,3 +1,0 @@
-
-templatesX: &template-script-X
-  - echo "common-script line XY1"

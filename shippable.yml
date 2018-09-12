@@ -13,8 +13,8 @@ build:
     - *template-script-X
   ci:
     - echo "hello world123"
-    #- *template-script-2
-    #- *template-script-X
+    - *template-script-2
+    - *template-script-X
   post_ci:
     - echo "hello world post_ci new now test"
     #- *template-script-2
